@@ -9,7 +9,7 @@ services:
         SMB_USER: user
         SMB_PASSWORD: pass
     volumes:
-      - /mnt:/mnt:ro
+      - /mnt:/mnt
     tty: yes
     restart: always
     ports:

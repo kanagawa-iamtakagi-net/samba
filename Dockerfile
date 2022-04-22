@@ -25,7 +25,9 @@ RUN { \
     echo "  valid users = ${SMB_USER}"; \
     echo "  guest ok = no"; \
     echo "  browsable = yes"; \
-    echo "  writable = no"; \
+    echo "  writable = yes"; \
+    echo "  create mode = 0666"; \
+    echo "  directory mode = 0777"; \
     echo "  vfs objects = full_audit"; \
     echo "  full_audit:prefix = %m|%I"; \
     echo "  full_audit:success = open"; \
